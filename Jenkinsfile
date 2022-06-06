@@ -23,6 +23,7 @@ node {
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
                         //sh "git push --force https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/update-k8s-manifest.git HEAD:master"
+                        sh "git remote add origin https://github.com/srikanta1219/update-k8s-manifest.git"
                         sh "git push --set-upstream origin master"
                        
                         
