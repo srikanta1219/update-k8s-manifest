@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: container-microapp
-        image: srikanta1219/micro1
+        image: srikanta1219/micro1:$BUILD.NUMBER
         ports:
         - containerPort: 80
 ---
