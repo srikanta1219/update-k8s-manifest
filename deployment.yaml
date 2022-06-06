@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: container-shanviapp
-        image: srikanta1219/shanvi:1
+        image: srikanta1219/shanvi:2
         ports:
         - containerPort: 80
 ---
